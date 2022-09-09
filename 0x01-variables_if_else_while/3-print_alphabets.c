@@ -15,7 +15,7 @@ int main(void)
 	for (danny = 'a'; danny <= 'z'; danny++)
 		putchar(danny);
 	for (danny = 'A'; danny <= 'Z'; danny++)
-		putchar(danny)
+		putchar(danny);
 			putchar('\n');
 	return (0);
 }
