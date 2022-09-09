@@ -18,7 +18,7 @@ int main(void)
 
 	for (hello = 'a'; hello <= 'z'; hello++)
 	{
-		if (hello != 'e' && hello != 'q')
+		if (hello != e && hello != q)
 			putchar(hello);
 	}
 	putchar('\n');
