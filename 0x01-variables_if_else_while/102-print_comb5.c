@@ -22,7 +22,7 @@ int main(void)
 			putchar((n / 10) + '0');
 			putchar((n % 10) + '0');
 
-			if (m == 98 && n ==99)
+			if (m == 98 && n == 99)
 
 				continue;
 			putchar(',');
@@ -32,4 +32,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-		
