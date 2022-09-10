@@ -12,7 +12,7 @@ int main(void)
 {
 	int g;
 
-	for (g = 0; g < 100; g++)
+	for (g = 1; g < 100; g++)
 	{
 		putchar((g / 10) + '0');
 		putchar((g % 10) + '0');
