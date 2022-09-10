@@ -1,54 +1,54 @@
 #include <stdio.h>
 
 /**
- * main - print triple combinations
+ * main - print tripple combinations
  *
- * Description: Print triple digit combinations
+ * Descriptions: print tripple digit combinations
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int m, n, o;
+	int q, r, s;
 
-	m = 48;
-	n = 48;
-	o = 48;
-	while (m < 58)
+	q = 48;
+	r = 48;
+	s = 48;
+	while (q < 58)
 	{
-		n = m + 1;
-		while (n < 58)
+		r = q + 1;
+		while (r < 58)
 		{
-			o = n + 1;
-			while (o < 58)
+			s = r + 1;
+			while (s < 58)
 			{
 
-				putchar(m);
+				putchar(q);
 
-				putchar(n);
+				putchar(r);
 
-				putchar(o);
-				if (m < 55 || n < 56 || o < 57)
+				putchar(s);
+				if (q < 55 || r < 56 || s < 57)
 				{
 
 					putchar(44);
 
 					putchar(32);
 
-					m++;
+					q++;
 
 				}
 
-				n++;
+				r++;
 
 			}
 
-			o++;
+			s++;
 
+			putchar(10);
+
+			return (0);
 		}
 
-		putchar(10);
 
-		return (0);
-	}
