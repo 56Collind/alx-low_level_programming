@@ -23,6 +23,7 @@ int main(void)
 			o = n + 1;
 			while (o < 58)
 			{
+
 				putchar(m);
 
 				putchar(n);
@@ -30,6 +31,7 @@ int main(void)
 				putchar(o);
 				if (m < 55 || n < 56 || o < 57)
 				{
+
 					putchar(44);
 
 					putchar(32);
