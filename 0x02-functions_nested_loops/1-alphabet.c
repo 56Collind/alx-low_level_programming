@@ -6,11 +6,16 @@
  */
 int main(void)
 {
-	char lower;
-	for (lower = 'a'; lower <= 'z'; lower++)
+	print_alphabet()
 	{
+		char lower;
+
+		for (lower = 'a'; lower <= 'z'; lower++)
+		{
 		_putchar(lower);
 		_putchar('\n');
+		}
 	}
-	return (0);
+
+return (0);
 }
