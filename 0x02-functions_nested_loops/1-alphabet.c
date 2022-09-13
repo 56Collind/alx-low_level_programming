@@ -6,6 +6,8 @@
  */
 int main(void)
 {
+	print_alphabet();
+
 	print_alphabet()
 	{
 		char lower;
@@ -15,6 +17,7 @@ int main(void)
 		_putchar(lower);
 		_putchar('\n');
 		}
+		return (void);
 	}
 
 return (0);
