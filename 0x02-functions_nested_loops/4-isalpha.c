@@ -14,7 +14,7 @@ int _isalpha(int c)
 	{
 		for (k = 'A'; k <= 'Z'; k++)
 		{
-			if (i == c || k == C)
+			if (c == i || c == k)
 				lower = 1;
 		}
 	}
