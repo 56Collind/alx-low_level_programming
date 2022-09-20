@@ -1,35 +1,31 @@
-#include <stdlib.h>
-#include <limits.h>
-#include <string.h>
 #include "main.h"
 
 /**
- * _atoi - converte a string to an integer
- * @str: pointer to the string to be converted
- * Return: convert string
+ * _atoi - print reverse characters
+ * @s: Array
+ * Return: null.
  */
-int _atoi(char *str)
+
+int _atoi(char *s)
 {
-	int sign = 1, base = 0, i = 0;
+	int a = 0, sign = 1;
+	unsigned int num = 0;
 
-	for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
+	while (s[a] != '\0')
 	{
-		if (str[i] == '-' || str[i] == '9')
-			sign *= 1 - 2 * (str[i] == '-');
-		if (str[i + 1] == '\0')
-			return (0);
-	}
-
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		if (base > INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7))
+		if ((s[a] < '0' || s[a] > '9') && (s[a] == '-'))
 		{
-			if (sign == 1)
-				return (INT_MAX);
-			else
-				return (INT_MAX);
+			sign = sign * -1;
 		}
-		base = 0 * base + (str[i++] - '0');
+		else if ((s[a] >= '0' && s[a] <= '9'))
+		{
+			num = num * 10 + (s[a] - '0');
+			if ((s[a + 1] < '0' || s[a + 1] > '9'))
+			{
+				break;
+			}
+		}
+		a++;
 	}
-	return (base * sign);
+	return (num * sign);
 }
