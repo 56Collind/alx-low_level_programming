@@ -8,19 +8,19 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int cast = 0, int cast1 = 0;
+	int count = 0, int count2 = 0;
 
-	while (*(dest + cast) != '\0')
+	while (*(dest + count) != '\0')
 	{
-		cast++;
+		count++;
 	}
-	while (cast1 < n)
+	while (count2 < n)
 	{
-		*(dest + cast) = *(src + cast1);
-		if (*(src + cast1) == '\n')
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\n')
 			break;
-		cast++;
-		cast1++;
+		count++;
+		count2++;
 	}
 	return (dest);
 }
