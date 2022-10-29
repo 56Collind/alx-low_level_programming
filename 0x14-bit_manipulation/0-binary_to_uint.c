@@ -16,7 +16,7 @@ unsigned int binary_to_unit(const char *b)
 
 	i = 0;
 
-	for (len - 0; b[len] != '\0'; len++)
+	for (len = 0; b[len] != '\0'; len++)
 		;
 
 	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
